@@ -1,4 +1,11 @@
+import {useState} from 'react';
+
 const Job = ({ job }) => {
+  const [showFullDesc, setShowFullDesc] = useState(false);
+  let description = job.description;
+  if (!showFullDesc){
+    description = description.substring(0,120) + "...";
+  } 
   return (
          <div className="bg-white rounded-xl shadow-md relative">
             <div className="p-4">
@@ -8,8 +15,11 @@ const Job = ({ job }) => {
               </div>
 
               <div className="mb-5">
-               {job.description}
+               {description}
               </div>
+              <button onClick={()=>setShowFullDesc(!showFullDesc)} className="text-indigo-500 mb-5 hover:text-indigo-600">
+                {showFullDesc ? 'less' : 'more'}
+                </button>
 
               <h3 className="text-indigo-500 mb-2">{job.salary} / Year</h3>
 
