@@ -1,4 +1,5 @@
-[
+{
+  "jobs" : [
     {
       "id": "1",
       "title": "Senior React Developer",
@@ -82,5 +83,132 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "7",
+      "title": "React UI Developer",
+      "type": "Full-Time",
+      "description": "We are looking for an experienced React UI Developer to join our growing team in Austin, TX. You will be responsible for building performant, accessible, and visually stunning interfaces. Strong knowledge of component-driven design and REST API integration is a must.",
+      "location": "Austin, TX",
+      "salary": "$80K - $90K",
+      "company": {
+        "name": "Codewave Inc",
+        "description": "Codewave Inc is an innovative software company focused on building modern SaaS products. We value creativity, ownership, and continuous learning, and we invest heavily in our team's growth and well-being.",
+        "contactEmail": "contact@codewave.com",
+        "contactPhone": "555-555-5556"
+      }
+    },
+    {
+      "id": "8",
+      "title": "Junior React Developer",
+      "type": "Full-Time",
+      "description": "Kickstart your career as a Junior React Developer with our team in Chicago, IL. We welcome motivated graduates and early-career developers who are eager to learn. Mentorship, training, and a clear path for advancement are all part of the package.",
+      "location": "Chicago, IL",
+      "salary": "$55K - $65K",
+      "company": {
+        "name": "Bright Pixel Studio",
+        "description": "Bright Pixel Studio is a digital product studio crafting web and mobile experiences for startups and enterprise clients alike. We believe great software starts with great people, and we're always looking for passionate individuals to join us.",
+        "contactEmail": "contact@brightpixel.com",
+        "contactPhone": "555-555-5557"
+      }
+    },
+    {
+      "id": "9",
+      "title": "React & TypeScript Engineer",
+      "type": "Full-Time",
+      "description": "We are hiring a skilled React & TypeScript Engineer to join our product team in Seattle, WA. You will work closely with designers and back-end engineers to deliver high-quality features. Experience with testing frameworks such as Jest and React Testing Library is preferred.",
+      "location": "Seattle, WA",
+      "salary": "$95K - $110K",
+      "company": {
+        "name": "NorthStar Digital",
+        "description": "NorthStar Digital is a technology consultancy helping Fortune 500 companies modernize their digital infrastructure. We offer competitive salaries, flexible work arrangements, and a culture built on trust and transparency.",
+        "contactEmail": "contact@northstardigital.com",
+        "contactPhone": "555-555-5558"
+      }
+    },
+    {
+      "id": "10",
+      "title": "Remote React Developer",
+      "type": "Remote",
+      "description": "Enjoy the freedom of working fully remote as a React Developer. We are a distributed team building a next-generation project management platform. You'll own features end-to-end, collaborate across time zones, and help shape our front-end architecture.",
+      "location": "Remote",
+      "salary": "$85K - $95K",
+      "company": {
+        "name": "CloudForge Labs",
+        "description": "CloudForge Labs is a fully remote software company building productivity tools for modern teams. We are passionate about async communication, open-source technology, and creating a workplace where everyone can do their best work.",
+        "contactEmail": "contact@cloudforgelabs.com",
+        "contactPhone": "555-555-5559"
+      }
+    },
+    {
+      "id": "11",
+      "title": "Front-End React Architect",
+      "type": "Full-Time",
+      "description": "We are seeking a senior-level Front-End Architect in Denver, CO to lead the design and implementation of our React-based platform. The ideal candidate has deep experience with state management, performance optimization, and mentoring junior developers.",
+      "location": "Denver, CO",
+      "salary": "$120K - $135K",
+      "company": {
+        "name": "Summit Software Group",
+        "description": "Summit Software Group delivers enterprise-grade software solutions to clients in healthcare, finance, and logistics. We foster a culture of excellence, continuous improvement, and respect for every team member.",
+        "contactEmail": "contact@summitsoftware.com",
+        "contactPhone": "555-555-5560"
+      }
+    },
+    {
+      "id": "12",
+      "title": "React Developer (Contract)",
+      "type": "Contract",
+      "description": "We have an exciting 6-month contract opportunity for an experienced React Developer based in or near San Francisco, CA. You'll integrate into an existing agile team to help deliver a high-traffic consumer web application on a tight timeline.",
+      "location": "San Francisco, CA",
+      "salary": "$60 - $75 / hr",
+      "company": {
+        "name": "Meridian Labs",
+        "description": "Meridian Labs is a product innovation company that partners with startups and scale-ups to bring ambitious digital products to market. We move fast, iterate often, and value developers who can hit the ground running.",
+        "contactEmail": "contact@meridianlabs.io",
+        "contactPhone": "555-555-5561"
+      }
+    },
+    {
+      "id": "13",
+      "title": "React & Node.js Full Stack Developer",
+      "type": "Full-Time",
+      "description": "Join our full-stack team in Nashville, TN and work across the entire web stack using React on the front end and Node.js on the back end. You'll help shape product direction alongside a small, high-performing engineering team in a fast-paced startup environment.",
+      "location": "Nashville, TN",
+      "salary": "$85K - $100K",
+      "company": {
+        "name": "Stackbridge",
+        "description": "Stackbridge is a venture-backed startup building the future of B2B SaaS. Our tight-knit engineering team thrives on ownership, experimentation, and shipping features that real customers love.",
+        "contactEmail": "contact@stackbridge.io",
+        "contactPhone": "555-555-5562"
+      }
+    },
+    {
+      "id": "14",
+      "title": "React Developer – FinTech",
+      "type": "Full-Time",
+      "description": "We are looking for a React Developer with an interest in financial technology to join our team in New York, NY. You will build dashboards and data visualization tools for institutional clients. Experience with charting libraries such as D3 or Recharts is a bonus.",
+      "location": "New York, NY",
+      "salary": "$100K - $120K",
+      "company": {
+        "name": "Apex Capital Tech",
+        "description": "Apex Capital Tech is a FinTech firm building sophisticated trading and analytics platforms for investment professionals. We combine deep financial domain expertise with cutting-edge engineering to deliver tools that move markets.",
+        "contactEmail": "contact@apexcapitaltech.com",
+        "contactPhone": "555-555-5563"
+      }
+    },
+    {
+      "id": "15",
+      "title": "React Developer – Part Time / Freelance",
+      "type": "Part-Time",
+      "description": "Looking for a part-time or freelance React Developer to support ongoing client projects from our San Diego, CA office. Flexible hours with the option to work hybrid. Great opportunity for developers looking to expand their portfolio with diverse projects.",
+      "location": "San Diego, CA",
+      "salary": "$50K - $60K",
+      "company": {
+        "name": "BlueSky Creative",
+        "description": "BlueSky Creative is a boutique digital agency serving clients in hospitality, lifestyle, and retail. We pride ourselves on pixel-perfect design execution and a relaxed, creative studio culture.",
+        "contactEmail": "contact@blueskycreative.com",
+        "contactPhone": "555-555-5564"
+      }
     }
   ]
+}
