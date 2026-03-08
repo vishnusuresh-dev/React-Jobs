@@ -14,7 +14,7 @@ const JobListings = ({style, isHome}) => {
       setJobs(data)
       }
       catch(error){
-        console.log("Something Went Wrong", error);
+        window.alert("Something Went Wrong", error);
       }
       finally{
         setLoading(false)
