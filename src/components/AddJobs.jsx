@@ -3,10 +3,10 @@ import { useState } from 'react'
 import { Navigate } from 'react-router-dom';
 const AddJobs = ({addJobSumbit}) => {
   
-  const [type, setType] = useState('');
+  const [type, setType] = useState('Full-Time');
   const [listing, setListing] = useState('');
   const [desc, setDesc] = useState('');
-  const [salary, setSalary] = useState('');
+  const [salary, setSalary] = useState('Under $50K');
   const [location, setLocation] = useState('');
   const [companyName, setCompanyName] = useState('');
   const [companyDesc, setCompanyDesc] = useState('');
