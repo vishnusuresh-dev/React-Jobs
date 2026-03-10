@@ -4,7 +4,6 @@ import {Route,
    createRoutesFromElements,
    RouterProvider
   } from 'react-router-dom';
-
 import HomePage from "./pages/HomePage";
 import MainLayout from "./Layouts/MainLayout";
 import JobsPage from "./pages/JobsPage";
@@ -12,6 +11,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import JobPage from "./pages/JobPage";
 import AddJobPage from "./pages/AddJobPage";
 
+const App = () => {
 const router = createBrowserRouter(
     createRoutesFromElements(
     <Route element={<MainLayout />}>
@@ -24,7 +24,6 @@ const router = createBrowserRouter(
   )
   );
 
-const App = () => {
   return <RouterProvider router={ router } />;
 };
 
