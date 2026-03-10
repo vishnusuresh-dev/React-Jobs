@@ -1,5 +1,5 @@
 {
-  "jobs" : [
+  "jobs": [
     {
       "id": "1",
       "title": "Senior React Developer",
@@ -198,7 +198,7 @@
     },
     {
       "id": "15",
-      "title": "React Developer – Part Time / Freelance",
+      "title": "React Developer - Part Time / Freelance",
       "type": "Part-Time",
       "description": "Looking for a part-time or freelance React Developer to support ongoing client projects from our San Diego, CA office. Flexible hours with the option to work hybrid. Great opportunity for developers looking to expand their portfolio with diverse projects.",
       "location": "San Diego, CA",
@@ -209,6 +209,21 @@
         "contactEmail": "contact@blueskycreative.com",
         "contactPhone": "555-555-5564"
       }
+    },
+    {
+      "id": "6b7f",
+      "title": "test",
+      "type": "Part-Time",
+      "description": "test",
+      "location": "test",
+      "salary": "$125K - 150K",
+      "company": {
+        "name": "test",
+        "description": "test",
+        "contactEmail": "test@gmail.com",
+        "contactPhone": "8943558673"
+      }
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

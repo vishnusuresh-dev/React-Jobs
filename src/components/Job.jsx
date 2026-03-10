@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState }  from 'react';
 import { FaMapMarker } from 'react-icons/fa'
 
 const Job = ({ job }) => {

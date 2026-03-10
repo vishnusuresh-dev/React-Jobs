@@ -1,10 +1,9 @@
-import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+
 const AddJobs = ({addJobSumbit}) => {
-  
   const [type, setType] = useState('Full-Time');
-  const [listing, setListing] = useState('');
+  const [title, setTitle] = useState('');
   const [desc, setDesc] = useState('');
   const [salary, setSalary] = useState('Under $50K');
   const [location, setLocation] = useState('');
@@ -21,14 +20,14 @@ const AddJobs = ({addJobSumbit}) => {
     const newJob = {
       title,
       type,
-      desc,
+      description : desc,
       location,
       salary,
       company : {
         name : companyName,
         descrition : companyDesc,
-        contactEmail : contactEmail,
-        contactPhone : contactPhone
+        contactEmail,
+        contactPhone
       }
     };
 
@@ -75,8 +74,8 @@ const AddJobs = ({addJobSumbit}) => {
                 name="title"
                 className="border rounded w-full py-2 px-3 mb-2"
                 placeholder="eg. Frontend Developer"
-                value={listing}
-                onChange={(e)=>setListing(e.target.value)}
+                value={title}
+                onChange={(e)=>setTitle(e.target.value)}
                 required />
             </div>
             <div className="mb-4">
