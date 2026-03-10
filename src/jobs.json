@@ -195,34 +195,6 @@
         "contactEmail": "contact@apexcapitaltech.com",
         "contactPhone": "555-555-5563"
       }
-    },
-    {
-      "id": "15",
-      "title": "React Developer - Part Time / Freelance",
-      "type": "Part-Time",
-      "description": "Looking for a part-time or freelance React Developer to support ongoing client projects from our San Diego, CA office. Flexible hours with the option to work hybrid. Great opportunity for developers looking to expand their portfolio with diverse projects.",
-      "location": "San Diego, CA",
-      "salary": "$50K - $60K",
-      "company": {
-        "name": "BlueSky Creative",
-        "description": "BlueSky Creative is a boutique digital agency serving clients in hospitality, lifestyle, and retail. We pride ourselves on pixel-perfect design execution and a relaxed, creative studio culture.",
-        "contactEmail": "contact@blueskycreative.com",
-        "contactPhone": "555-555-5564"
-      }
-    },
-    {
-      "id": "6b7f",
-      "title": "test",
-      "type": "Part-Time",
-      "description": "test",
-      "location": "test",
-      "salary": "$125K - 150K",
-      "company": {
-        "name": "test",
-        "description": "test",
-        "contactEmail": "test@gmail.com",
-        "contactPhone": "8943558673"
-      }
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

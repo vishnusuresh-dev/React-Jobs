@@ -26,8 +26,16 @@ const JobPage = () => {
     fetchJob();
   },[])
 
+  const deleteSingleJob = async (jobId) => {
+    
+    const res = await fetch(`http://localhost:5000/jobs/${jobId}`,{
+      method : 'DELETE'
+    })
+    return;
+  }
+
   return(
-    loading ? <Spinner /> : <SingleJob job={viewJob}/>
+    loading ? <Spinner /> : <SingleJob deleteJobFn={deleteSingleJob} job={ viewJob }/>
   )
 }
 
