@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
 const AddJobs = ({addJobSumbit}) => {
   const [type, setType] = useState('Full-Time');
   const [title, setTitle] = useState('');
@@ -31,8 +30,6 @@ const AddJobs = ({addJobSumbit}) => {
       }
     };
     addJobSumbit(newJob);
-
-    toast.success("Job Added Successfully");
 
     return navigate("/jobs");
   }

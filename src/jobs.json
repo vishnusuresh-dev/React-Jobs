@@ -167,34 +167,6 @@
         "contactEmail": "contact@meridianlabs.io",
         "contactPhone": "555-555-5561"
       }
-    },
-    {
-      "id": "13",
-      "title": "React & Node.js Full Stack Developer",
-      "type": "Full-Time",
-      "description": "Join our full-stack team in Nashville, TN and work across the entire web stack using React on the front end and Node.js on the back end. You'll help shape product direction alongside a small, high-performing engineering team in a fast-paced startup environment.",
-      "location": "Nashville, TN",
-      "salary": "$85K - $100K",
-      "company": {
-        "name": "Stackbridge",
-        "description": "Stackbridge is a venture-backed startup building the future of B2B SaaS. Our tight-knit engineering team thrives on ownership, experimentation, and shipping features that real customers love.",
-        "contactEmail": "contact@stackbridge.io",
-        "contactPhone": "555-555-5562"
-      }
-    },
-    {
-      "id": "14",
-      "title": "React Developer – FinTech",
-      "type": "Full-Time",
-      "description": "We are looking for a React Developer with an interest in financial technology to join our team in New York, NY. You will build dashboards and data visualization tools for institutional clients. Experience with charting libraries such as D3 or Recharts is a bonus.",
-      "location": "New York, NY",
-      "salary": "$100K - $120K",
-      "company": {
-        "name": "Apex Capital Tech",
-        "description": "Apex Capital Tech is a FinTech firm building sophisticated trading and analytics platforms for investment professionals. We combine deep financial domain expertise with cutting-edge engineering to deliver tools that move markets.",
-        "contactEmail": "contact@apexcapitaltech.com",
-        "contactPhone": "555-555-5563"
-      }
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

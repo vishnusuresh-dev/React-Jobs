@@ -31,6 +31,9 @@ const JobPage = () => {
     const res = await fetch(`http://localhost:5000/jobs/${jobId}`,{
       method : 'DELETE'
     })
+    
+    res ? window.alert("Job Deleted Successully") : window.alert("Something Went Wrong");
+
     return;
   }
 

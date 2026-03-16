@@ -10,6 +10,9 @@ const AddJobPage = () => {
       },
       body : JSON.stringify(newJob)
     });
+
+    res ? window.alert("Job Added Successully") : window.alert("Something Went Wrong");
+    
     return;
   }
 
