@@ -1,12 +1,14 @@
 
 import { useState, useEffect} from 'react';
-import { useParams } from 'react-router-dom'; 
+import { useParams, useNavigate } from 'react-router-dom'; 
+import Spinner from '../components/Spinner';
 
 
 const EditJobPage = () => {
 
     const [job, setJob] = useState(null);
     const { id } = useParams();
+    const navigate = useNavigate();
     
     useEffect(()=>{ 
       const getJob = async () => {
@@ -50,12 +52,52 @@ const EditJobPage = () => {
         }
       }, [job]);
 
+    const handleEdit = async (e) => {
+
+      e.preventDefault();
+
+      const updatedJob = {
+      type,
+      title,
+      description: desc,
+      salary,
+      location,
+      company: {
+        name: companyName,
+        description: companyDesc,
+        contactEmail,
+        contactPhone
+        }
+      };
+
+      try{
+        const res = await fetch(`http://localhost:5000/jobs/${id}`,{
+          method : "PUT",
+          headers :{
+            'Content-Type' : "application/json"
+          },
+          body : JSON.stringify(updatedJob)
+        });
+
+        alert("Job Updated Successfully")
+
+        navigate(`/jobs/${id}`);
+
+        
+      }
+      catch(e){
+        window.alert("Something went wrong", e);
+
+        navigate(`/jobs/${id}`);
+      }
+    }
 
   return (
+    job ? (
     <section className="bg-indigo-50">
       <div className="container m-auto max-w-2xl py-24">
         <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
-          <form>
+          <form onSubmit={handleEdit}>
             <h2 className="text-3xl text-center font-semibold mb-6">Add Job</h2>
             <div className="mb-4">
               <label htmlFor="type" className="block text-gray-700 font-bold mb-2">Job Type</label>
@@ -217,7 +259,8 @@ const EditJobPage = () => {
         </div>
       </div>
     </section>
-  )
+  ) : <Spinner />
+)
 }
 
 export default EditJobPage
