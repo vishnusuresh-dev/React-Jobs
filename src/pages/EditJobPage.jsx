@@ -1,22 +1,29 @@
 
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom'; 
-import { useEffect } from 'react';
 
 
 const EditJobPage = () => {
 
     const [job,setJob] = useState([])
-    const {id} = useParams();
+    const { id } = useParams();
     
     useEffect(()=>{ 
       const getJob = async () => {
-      const res = await fetch(`http://localhost:5000/jobs/${id}`)
-      const job = await res.json();
-      setJob(job);
-     }
+      try{
+        const res = await fetch(`http://localhost:5000/jobs/${id}`)
+        const job = await res.json();
+        console.log(job);
+        setJob(job);
+        }
+      catch(e){
+        window.alert("Something went wrong",e)
+      }
+    }
+    
+    getJob();
 
-    })
+    },[])
 
     const [type, setType] = useState(job.type);
     const [title, setTitle] = useState(job.title);
