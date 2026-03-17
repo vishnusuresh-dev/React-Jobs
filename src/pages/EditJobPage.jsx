@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 
 const EditJobPage = () => {
 
-    const [job,setJob] = useState([])
+    const [job, setJob] = useState(null);
     const { id } = useParams();
     
     useEffect(()=>{ 
@@ -13,27 +13,43 @@ const EditJobPage = () => {
       try{
         const res = await fetch(`http://localhost:5000/jobs/${id}`)
         const job = await res.json();
-        console.log(job);
         setJob(job);
+        return
         }
       catch(e){
         window.alert("Something went wrong",e)
       }
     }
-    
+
     getJob();
+    console.log(job);
 
     },[])
 
-    const [type, setType] = useState(job.type);
-    const [title, setTitle] = useState(job.title);
-    const [desc, setDesc] = useState(job.description);
-    const [salary, setSalary] = useState(job.salary);
-    const [location, setLocation] = useState(job.location);
-    const [companyName, setCompanyName] = useState(job.company.name);
-    const [companyDesc, setCompanyDesc] = useState(job.company.description);
-    const [contactEmail, setContactEmail] = useState(job.company.contactEmail);
-    const [contactPhone, setContactPhone] = useState(job.company.contactPhone);
+    const [type, setType] = useState('Full-Time');
+    const [title, setTitle] = useState('');
+    const [desc, setDesc] = useState('');
+    const [salary, setSalary] = useState('Under $50K');
+    const [location, setLocation] = useState('');
+    const [companyName, setCompanyName] = useState('');
+    const [companyDesc, setCompanyDesc] = useState('');
+    const [contactEmail, setContactEmail] = useState('');
+    const [contactPhone, setContactPhone] = useState('');
+
+    useEffect(() => {
+        if (job) {
+          setType(job.type);
+          setTitle(job.title);
+          setDesc(job.description);
+          setSalary(job.salary);
+          setLocation(job.location);
+          setCompanyName(job.company.name);
+          setCompanyDesc(job.company.description);
+          setContactEmail(job.company.contactEmail);
+          setContactPhone(job.company.contactPhone);
+        }
+      }, [job]);
+
 
   return (
     <section className="bg-indigo-50">
