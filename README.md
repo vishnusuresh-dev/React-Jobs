@@ -16,8 +16,6 @@ The project is designed to showcase practical frontend engineering concepts incl
 * Edit existing job postings
 * Delete job listings
 * Client-side routing using React Router
-* Loading indicators during asynchronous operations
-* Toast notifications for user feedback
 * Responsive UI built with Tailwind CSS
 
 ---
@@ -27,12 +25,9 @@ The project is designed to showcase practical frontend engineering concepts incl
 ### Frontend
 
 * React
-* Vite
 * Tailwind CSS
 * React Router DOM
-* React Icons
-* React Toastify
-* React Spinners
+
 
 ### Backend (Mock API)
 
@@ -133,7 +128,7 @@ DELETE  /jobs/:id
 Clone the repository:
 
 ```
-git clone https://github.com/yourusername/react-jobs.git
+git clone https://github.com/vishnusuresh-dev/react-jobs.git
 ```
 
 Navigate to the project directory:
@@ -145,7 +140,7 @@ cd react-jobs
 Install dependencies:
 
 ```
-npm install
+npm install 
 ```
 
 ---
